@@ -33,11 +33,6 @@ pipeline {
                 pwd()
             }
         }
-        stage('Write a file') {
-            steps {
-                writeFile encoding: 'Base64', file: 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\pipelinejob.txt', text: 'This a text file in pipeline job'
-            }
-        }
-        
+       
     }
 }
